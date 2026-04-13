@@ -5,8 +5,8 @@ import {
   getDocs,
   orderBy,
   query,
-} from "./firebase.js";
-import { STORE_CONFIG } from "../config.js";
+} from "firebase.js";
+import { STORE_CONFIG } from "config.js";
 
 const PRODUCT_COLLECTION = "productos";
 const CATEGORY_COLLECTION = "categorias";
