@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="catalog">
+    <div class="site-shell">
+      <header class="site-header is-scrolled" data-header></header>
+
+      <main class="catalog-page">
+        <section class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">Catálogo completo</span>
+              <h2>Encuentra tu próxima compra</h2>
+            </div>
+            <p data-results-count>0 productos</p>
+          </div>
+
+          <div class="catalog-layout">
+            <aside class="filter-panel">
+              <label>
+                Buscar por nombre o código
+                <input type="search" placeholder="Ej: Hoodie 01 o HD-001" data-filter-search />
+              </label>
+              <label>
+                Categoría
+                <select data-filter-category></select>
+              </label>
+              <label>
+                Precio máximo
+                <input type="number" min="0" step="1" placeholder="Ej: 250" data-filter-price-number />
+              </label>
+              <p class="helper-text">Filtra y explora todos los productos disponibles.</p>
+            </aside>
+
+            <div class="product-grid" data-product-grid></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" data-footer></footer>
+    </div>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-panel" data-cart-panel></aside>
+
+    <script src="js/ui.js"></script>
+    <script type="module" src="js/store.js"></script>
+  </body>
+</html>

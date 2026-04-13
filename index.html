@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header" data-header></header>
+
+      <main>
+        <section id="inicio" data-hero></section>
+
+        <section class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">Drop destacado</span>
+              <h2>Nueva colección</h2>
+            </div>
+            <p>Esta sección muestra productos con la categoría <strong>Nueva colección</strong>.</p>
+          </div>
+          <div class="new-collection-grid" data-new-collection></div>
+        </section>
+
+        <section class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">Selección especial</span>
+              <h2>Sale con presencia visual</h2>
+            </div>
+            <p>Productos marcados con la categoría <strong>sale</strong> desde Firestore.</p>
+          </div>
+          <div class="horizontal-scroll" data-sale-products></div>
+        </section>
+
+        <section class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">Colecciones</span>
+              <h2>Explora por categoría</h2>
+            </div>
+            <p>Elige una categoría y te llevamos al catálogo completo filtrado.</p>
+          </div>
+          <div class="collection-grid" data-collections></div>
+        </section>
+
+        <section class="section-shell" id="catalogo">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">Catálogo destacado</span>
+              <h2>Piezas para destacar</h2>
+            </div>
+            <p data-results-count>0 productos</p>
+          </div>
+          <div class="product-grid product-grid--preview" data-product-grid></div>
+          <div class="section-cta">
+            <a href="catalogo.html" class="btn btn-primary">Ver más productos</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacto" data-footer></footer>
+    </div>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-panel" data-cart-panel></aside>
+
+    <script src="js/ui.js"></script>
+    <script type="module" src="js/store.js"></script>
+  </body>
+</html>

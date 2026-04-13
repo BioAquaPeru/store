@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="product">
+    <header class="site-header is-scrolled" data-header></header>
+
+    <main class="product-detail-page">
+      <div data-product-detail></div>
+
+      <section class="section-shell section-shell--tight">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-related-kicker>También te puede gustar</span>
+            <h2 data-related-title>Más productos</h2>
+          </div>
+        </div>
+        <div class="horizontal-scroll" data-related-products></div>
+      </section>
+    </main>
+
+    <footer class="footer" data-footer></footer>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-panel" data-cart-panel></aside>
+
+    <script src="js/ui.js"></script>
+    <script type="module" src="js/store.js"></script>
+  </body>
+</html>
