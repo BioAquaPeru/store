@@ -19,7 +19,7 @@ import {
   setDoc,
   updateDoc,
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-import { FIREBASE_CONFIG } from "../config.js";
+import { FIREBASE_CONFIG } from "config.js";
 
 const app = initializeApp(FIREBASE_CONFIG);
 const db = getFirestore(app);
