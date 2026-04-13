@@ -12,8 +12,8 @@ import {
   setDoc,
   signInWithEmailAndPassword,
   signOut,
-} from "./firebase.js";
-import { STORE_CONFIG } from "../config.js";
+} from "firebase.js";
+import { STORE_CONFIG } from ".config.js";
 
 const refs = {
   loginForm: document.querySelector("[data-login-form]"),
